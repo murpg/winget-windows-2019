@@ -2,6 +2,17 @@
 Set-PackageSource -Name PSGallery -Trusted
 Install-Module NtObjectManager -Force
 
+cd C:\Users\dbgAdmin
+mkdir Temp
+cd Temp
+
+# Source file location
+$source = 'https://github.com/murpg/winget-windows-2019/blob/master/appx.zip'
+# Destination to save the file
+$destination = 'C:\Users\dbgAdmin\Temp\appx.zip'
+#Download the file
+Invoke-WebRequest -Uri $source -OutFile $destination
+Expand-Archive -Path appx.zip -DestinationPath C:\Users\dbgAdmin\Temp
 
 
 Add-AppxPackage -Path .\Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe.appx
