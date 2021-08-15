@@ -3,8 +3,6 @@ Set-PackageSource -Name PSGallery -Trusted
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 Install-Module NtObjectManager -Force
 
-Start-Sleep -s 90
-
 cd C:\Users\dbgAdmin
 mkdir Temp
 cd Temp
@@ -38,7 +36,7 @@ Add-AppxPackage -Path .\Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe.appx
 Add-AppxPackage -Path .\Microsoft.VCLibs.140.00_8wekyb3d8bbwe.appx
 Add-AppxPackage -Path .\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle -ForceUpdateFromAnyVersion
 
-Start-Sleep -s 30
+
 
 # Create reparse point 
 $installationPath = (Get-AppxPackage Microsoft.DesktopAppInstaller).InstallLocation
