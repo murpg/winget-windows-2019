@@ -3,6 +3,7 @@ Set-PackageSource -Name PSGallery -Trusted
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 Install-Module NtObjectManager -Force
 
+mkdir Temp
 cd C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\0\Temp
 
 # Source file location
