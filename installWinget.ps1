@@ -3,34 +3,29 @@ Set-PackageSource -Name PSGallery -Trusted
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 Install-Module NtObjectManager -Force
 
-cd C:\Users\dbgAdmin
-mkdir Temp
-cd Temp
+cd C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\0\Temp
 
 # Source file location
 $source1 = 'https://github.com/murpg/winget-windows-2019/raw/master/appx/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle'
 # Destination to save the file
-$destination1 = 'C:\Users\dbgAdmin\Temp\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle'
+$destination1 = 'C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\0\Temp\Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle'
 #Download the file
 Invoke-WebRequest -Uri $source1 -OutFile $destination1
 
-Start-Sleep -s 30
 
 $source2 = 'https://github.com/murpg/winget-windows-2019/raw/master/appx/Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe.appx'
 # Destination to save the file
-$destination2 = 'C:\Users\dbgAdmin\Temp\Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe.appx'
+$destination2 = 'C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\0\Temp\Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe.appx'
 #Download the file
 Invoke-WebRequest -Uri $source2 -OutFile $destination2
 
-Start-Sleep -s 30
 
 $source3 = 'https://github.com/murpg/winget-windows-2019/raw/master/appx/Microsoft.VCLibs.140.00_8wekyb3d8bbwe.appx'
 # Destination to save the file
-$destination3 = 'C:\Users\dbgAdmin\Temp\Microsoft.VCLibs.140.00_8wekyb3d8bbwe.appx'
+$destination3 = 'C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.9.5\Downloads\0\Temp\Microsoft.VCLibs.140.00_8wekyb3d8bbwe.appx'
 #Download the file
 Invoke-WebRequest -Uri $source3 -OutFile $destination3
 
-Start-Sleep -s 30
 
 Add-AppxPackage -Path .\Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe.appx
 Add-AppxPackage -Path .\Microsoft.VCLibs.140.00_8wekyb3d8bbwe.appx
