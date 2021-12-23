@@ -1,6 +1,6 @@
 ## How to install WINGET-CLI on Windows 2019  
 
-Have you seen the latest Windows Package Manager? It is meant to eventually run like some of the faboulous Linux packagers. Or the nice open source Windows package manager Chocolatey. Why another Windows package manager you ask? Well this Windows package manager will be backed into the Windows OS. Currently it is only available on Windows 10. And only a certain version of Windows 10. With some effort I have been able to get this to work on Windows 2019 server. I have not tested it on Windows 2016 server.
+Have you seen the latest Windows Package Manager? It is meant to eventually run like some of the faboulous Linux packagers. Or the nice open source Windows package manager Chocolatey. Why another Windows package manager you ask? Well this Windows package manager will be baked into the Windows OS. Currently it is only available on Windows 10. And only a certain version of Windows 10. With some effort I have been able to get this to work on Windows 2019 server. I have not tested it on Windows 2016 server.
 
 I have bundled the 3 Windows files that it takes to get this to work in this file. appx.zip.   
 
